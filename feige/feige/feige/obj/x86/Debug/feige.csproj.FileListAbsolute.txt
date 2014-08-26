@@ -1,0 +1,7 @@
+E:\form\form\feige\feige\feige\bin\Debug\feige.exe
+E:\form\form\feige\feige\feige\bin\Debug\feige.pdb
+E:\form\form\feige\feige\feige\obj\x86\Debug\feige.Form1.resources
+E:\form\form\feige\feige\feige\obj\x86\Debug\feige.Properties.Resources.resources
+E:\form\form\feige\feige\feige\obj\x86\Debug\feige.csproj.GenerateResource.Cache
+E:\form\form\feige\feige\feige\obj\x86\Debug\feige.exe
+E:\form\form\feige\feige\feige\obj\x86\Debug\feige.pdb

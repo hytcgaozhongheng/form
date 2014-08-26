@@ -36,6 +36,7 @@
             this.name = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.chatbox = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // chatsend
@@ -72,14 +73,13 @@
             this.chatroom.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.chatroom.Size = new System.Drawing.Size(601, 315);
             this.chatroom.TabIndex = 1;
-   
             // 
             // textBox5
             // 
-            this.textBox5.Location = new System.Drawing.Point(691, 11);
+            this.textBox5.Location = new System.Drawing.Point(691, 91);
             this.textBox5.Multiline = true;
             this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(141, 395);
+            this.textBox5.Size = new System.Drawing.Size(163, 315);
             this.textBox5.TabIndex = 2;
             // 
             // name
@@ -107,11 +107,20 @@
             this.chatbox.Size = new System.Drawing.Size(601, 21);
             this.chatbox.TabIndex = 1;
             // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(691, 11);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(65, 58);
+            this.textBox1.TabIndex = 5;
+            // 
             // chat
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(842, 477);
+            this.ClientSize = new System.Drawing.Size(866, 477);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.name);
             this.Controls.Add(this.textBox5);
@@ -139,6 +148,7 @@
         private System.Windows.Forms.Label name;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox chatbox;
+        private System.Windows.Forms.TextBox textBox1;
 
     }
 }
