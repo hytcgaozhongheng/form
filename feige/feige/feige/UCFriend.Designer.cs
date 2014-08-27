@@ -28,48 +28,56 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UCFriend));
+            this.headerimage = new System.Windows.Forms.PictureBox();
+            this.lblNickName = new System.Windows.Forms.Label();
+            this.lblShuoshuo = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.headerimage)).BeginInit();
             this.SuspendLayout();
             // 
-            // pictureBox1
+            // headerimage
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(14, 14);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(60, 60);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.headerimage.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("headerimage.BackgroundImage")));
+            this.headerimage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.headerimage.Image = ((System.Drawing.Image)(resources.GetObject("headerimage.Image")));
+            this.headerimage.Location = new System.Drawing.Point(14, 14);
+            this.headerimage.Name = "headerimage";
+            this.headerimage.Size = new System.Drawing.Size(60, 60);
+            this.headerimage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.headerimage.TabIndex = 0;
+            this.headerimage.TabStop = false;
+            this.headerimage.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
-            // label1
+            // lblNickName
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(138, 14);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(41, 12);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "label1";
+            this.lblNickName.AutoSize = true;
+            this.lblNickName.Location = new System.Drawing.Point(138, 14);
+            this.lblNickName.Name = "lblNickName";
+            this.lblNickName.Size = new System.Drawing.Size(41, 12);
+            this.lblNickName.TabIndex = 1;
+            this.lblNickName.Text = "label1";
             // 
-            // label2
+            // lblShuoshuo
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(138, 42);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(41, 12);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "label2";
+            this.lblShuoshuo.AutoSize = true;
+            this.lblShuoshuo.Location = new System.Drawing.Point(138, 42);
+            this.lblShuoshuo.Name = "lblShuoshuo";
+            this.lblShuoshuo.Size = new System.Drawing.Size(41, 12);
+            this.lblShuoshuo.TabIndex = 2;
+            this.lblShuoshuo.Text = "label2";
             // 
             // UCFriend
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.pictureBox1);
+            this.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.Controls.Add(this.lblShuoshuo);
+            this.Controls.Add(this.lblNickName);
+            this.Controls.Add(this.headerimage);
             this.Name = "UCFriend";
-            this.Size = new System.Drawing.Size(260, 80);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.Size = new System.Drawing.Size(256, 76);
+            this.Load += new System.EventHandler(this.UCFriend_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.headerimage)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -77,8 +85,8 @@
 
         #endregion
 
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.PictureBox headerimage;
+        private System.Windows.Forms.Label lblNickName;
+        private System.Windows.Forms.Label lblShuoshuo;
     }
 }
